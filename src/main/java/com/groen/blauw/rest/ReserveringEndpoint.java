@@ -19,6 +19,11 @@ public class ReserveringEndpoint {
 		rs.toonAlleReservering();
 		System.out.println("hoi ik werk");
 	}
+	
+	@GetMapping("/ennunetjes")
+	public Iterable<Reservering> endpointmethode(){
+		return rs.enNuNetjes();
+	}
 
 
 }

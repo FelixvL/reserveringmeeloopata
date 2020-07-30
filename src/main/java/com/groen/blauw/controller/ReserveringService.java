@@ -22,5 +22,9 @@ public class ReserveringService {
 			System.out.println("Een record uit de database"+r.getId());
 		}
 	}
+	
+	public Iterable<Reservering> enNuNetjes() {
+		return rr.findAll();
+	}
 
 }
